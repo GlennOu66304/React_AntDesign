@@ -2,6 +2,9 @@ import './App.css';
 import { Row, Col } from 'antd'
 import React, { Component } from 'react'
 import Nav from './components/Nav/Nav'
+import Header from './components/Header/Header'
+// import Home from './views/Home/Home'
+import IRouter from './router'
 export default class App extends Component {
   render() {
     return (
@@ -11,7 +14,8 @@ export default class App extends Component {
             <Nav />
           </Col>
           <Col span={20} className="app-right">
-            Right
+            <Header />
+            <IRouter />
           </Col>
         </Row>
       </div>

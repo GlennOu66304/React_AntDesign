@@ -1,0 +1,11 @@
+.common-header {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.common-header img {
+  float: right;
+  width: 40px;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Icon, } from 'antd';
 import menuList from '../../config/menuConfig';
 import './Nav.css'
-
+import { Link } from 'react-router-dom'
 const { SubMenu } = Menu;
 class Nav extends Component {
 
@@ -33,8 +33,10 @@ class Nav extends Component {
             } else {
                 return (
                     <Menu.Item key={item.path} >
-                        <Icon type={item.icon} />
-                        <span>{item.title}</span>
+                        <Link to={item.path}>
+                            <Icon type={item.icon} />
+                            <span>{item.title}</span>
+                        </Link>
                     </Menu.Item>
                 )
             }

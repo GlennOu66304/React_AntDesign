@@ -1,0 +1,6 @@
+const SET_LOGIN = 'SET_LOGIN';
+const SET_USERNAME = 'SET_USERNAME';
+export {
+    SET_LOGIN,
+    SET_USERNAME
+}

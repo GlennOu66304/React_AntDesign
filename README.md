@@ -3,7 +3,6 @@
 
 
 
-18897981716
 
 # Getting Started with Create React App
 

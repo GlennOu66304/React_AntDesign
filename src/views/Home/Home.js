@@ -7,7 +7,11 @@ function mapStateToProps(state) {
         name: state.username
     }
 }
+function mapDispatchToProps(dispatch) {
+    return {
 
+    }
+}
 
 class Home extends Component {
     render() {
@@ -26,4 +30,4 @@ class Home extends Component {
     }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapDispatchToProps, mapStateToProps)(Home)

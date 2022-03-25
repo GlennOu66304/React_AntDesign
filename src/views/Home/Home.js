@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import './Home.css'
+// import the connect
 import { connect } from 'react-redux'
 
+//4.mapStateToProps
 function mapStateToProps(state) {
     return {
         name: state.username
     }
 }
+
+// 5.mapDispatch
 function mapDispatchToProps(dispatch) {
     return {
 
@@ -30,4 +34,5 @@ class Home extends Component {
     }
 }
 
+//3.Hoc Component
 export default connect(mapDispatchToProps, mapStateToProps)(Home)

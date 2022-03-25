@@ -7,7 +7,7 @@ let state = {
 }
 
 function reducer(preState = state, action) {
-
+// Switch condition usa
     switch (action.type) {
         case SET_LOGIN:
             return Object.assign({}, preState, {

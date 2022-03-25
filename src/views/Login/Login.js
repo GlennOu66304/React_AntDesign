@@ -27,6 +27,7 @@ class Login extends Component {
     submitInfo = () => {
         axios('http://www.qmtexh.com.login').then(res => {
             console.log(res)
+            // 5.use in the code setction
             this.props.setUsername(res.data.name)
         }).catch(err => {
             console.log(err)

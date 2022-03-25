@@ -5,8 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './Mock/Mock';
+
+//1.import store and provider
 import store from './store'
 import { Provider } from 'react-redux';
+//2. use it in the index
 ReactDOM.render(
   <Provider store={store}>
     <Router>

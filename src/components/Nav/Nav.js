@@ -1,76 +1,69 @@
-import React, { Component } from 'react'
-import { Menu, Icon, } from 'antd';
-import menuList from '../../config/menuConfig';
-import './Nav.css'
-import { Link } from 'react-router-dom'
+import React, { Component } from "react";
+import { Menu, Icon } from "antd";
+import menuList from "../../config/menuConfig";
+import "./Nav.css";
+import { Link } from "react-router-dom";
 const { SubMenu } = Menu;
 class Nav extends Component {
+  constructor(params) {
+    super(params);
+    this.state = {
+      list: [],
+    };
+    this.createMenu = this.createMenu.bind(this);
+  }
 
-
-    constructor(params) {
-        super(params);
-        this.state = {
-            list: [],
-        };
-        this.createMenu = this.createMenu.bind(this);
-    }
-
-    createMenu(_config) {
-        let _list = _config.map((item, index) => {
-            if (item.children) {
-                return (
-                    <SubMenu
-                        key={item.path}
-                        title={
-                            <span>
-                                <Icon type={item.icon} />
-                                <span>{item.title}</span>
-                            </span>
-                        }
-                    >
-                        {this.createMenu(item.children)}
-                    </SubMenu>)
-            } else {
-                return (
-                    <Menu.Item key={item.path} >
-                        <Link to={item.path}>
-                            <Icon type={item.icon} />
-                            <span>{item.title}</span>
-                        </Link>
-                    </Menu.Item>
-                )
-            }
-
-        })
-
-        return _list
-
-
-    }
-
-    componentWillMount() {
-        let list = this.createMenu(menuList);
-        console.log(list);
-        this.setState({
-            list
-
-        })
-    }
-
-    render() {
+  createMenu(_config) {
+    let _list = _config.map((item, index) => {
+      if (item.children) {
         return (
-            <div >
+          <SubMenu
+            key={item.path}
+            title={
+              <span>
+                <Icon type={item.icon} />
+                <span>{item.title}</span>
+              </span>
+            }
+          >
+            {this.createMenu(item.children)}
+          </SubMenu>
+        );
+      } else {
+        return (
+          <Menu.Item key={item.path}>
+            <Link to={item.path}>
+              <Icon type={item.icon} />
+              <span>{item.title}</span>
+            </Link>
+          </Menu.Item>
+        );
+      }
+    });
 
-                <Menu
-                    defaultSelectedKeys={['1']}
-                    defaultOpenKeys={['sub1']}
-                    mode="inline"
-                    theme="dark"
+    return _list;
+  }
 
-                >
-                    {this.state.list}
+  componentWillMount() {
+    let list = this.createMenu(menuList);
+    console.log(list);
+    this.setState({
+      list,
+    });
+  }
 
-                    {/* <Menu.Item key="1">
+  render() {
+    return (
+      <div>
+        <Menu
+          defaultSelectedKeys={["1"]}
+          defaultOpenKeys={["sub1"]}
+          mode="inline"
+          theme="dark"
+        >
+          {this.state.list}
+
+          {/* <Menu.Item key="1">
                         <Icon type="pie-chart" />
                         <span>Option 1</span>
                     </Menu.Item>
@@ -112,10 +105,10 @@ class Nav extends Component {
                             <Menu.Item key="12">Option 12</Menu.Item>
                         </SubMenu>
                     </SubMenu> */}
-                </Menu>
-            </div>
-        )
-    }
+        </Menu>
+      </div>
+    );
+  }
 }
 
-export default Nav
+export default Nav;

@@ -18,8 +18,8 @@ class Home extends Component {
         <h1 className="home-name">hello {this.props.name}</h1>
         <h1 className="home-title">欢迎重新进入青盟后台管理系统3</h1>
         <div className="home-wrapper">
-          <img src="/imgs/right.jpeg" alt="" />
-          <img src="/imgs/left.jpeg" alt="" />
+          <img src="https://glennou66304.github.io/React_AntDesign/imgs/left.jpeg" alt="" />
+          <img src="https://glennou66304.github.io/React_AntDesign/imgs/right.jpeg" alt="" />
         </div>
       </div>
     );

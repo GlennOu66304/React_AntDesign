@@ -15,7 +15,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <p className="home-name">hello {this.props.name}</p>
+        <h1 className="home-name">hello {this.props.name}</h1>
         <h1 className="home-title">欢迎重新进入青盟后台管理系统3</h1>
         <div className="home-wrapper">
           <img src="/imgs/right.jpeg" alt="" />

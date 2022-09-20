@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/React-AntDesin/static/css/main.5d4d5b5d.css",
-    "main.js": "/React-AntDesin/static/js/main.f8bf80fd.js",
-    "static/js/27.642a846c.chunk.js": "/React-AntDesin/static/js/27.642a846c.chunk.js",
-    "index.html": "/React-AntDesin/index.html"
+    "main.css": "/React_AntDesign/static/css/main.5d4d5b5d.css",
+    "main.js": "/React_AntDesign/static/js/main.c7717eca.js",
+    "static/js/27.642a846c.chunk.js": "/React_AntDesign/static/js/27.642a846c.chunk.js",
+    "index.html": "/React_AntDesign/index.html"
   },
   "entrypoints": [
     "static/css/main.5d4d5b5d.css",
-    "static/js/main.f8bf80fd.js"
+    "static/js/main.c7717eca.js"
   ]
 }

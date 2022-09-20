@@ -4,7 +4,7 @@ export default class UserList extends Component {
     render() {
         return (
             <div>
-             <h1>This is the UserList page</h1>
+             <h1>This is the UserList page2</h1>
             </div>
         )
     }

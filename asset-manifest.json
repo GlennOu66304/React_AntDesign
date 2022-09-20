@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React_AntDesign/static/css/main.21ed6118.css",
-    "main.js": "/React_AntDesign/static/js/main.b5e4fc4d.js",
-    "static/js/787.2cb4a91e.chunk.js": "/React_AntDesign/static/js/787.2cb4a91e.chunk.js",
-    "index.html": "/React_AntDesign/index.html",
-    "main.21ed6118.css.map": "/React_AntDesign/static/css/main.21ed6118.css.map",
-    "main.b5e4fc4d.js.map": "/React_AntDesign/static/js/main.b5e4fc4d.js.map",
-    "787.2cb4a91e.chunk.js.map": "/React_AntDesign/static/js/787.2cb4a91e.chunk.js.map"
+    "main.css": "/static/css/main.45d2b814.css",
+    "main.js": "/static/js/main.ab11b7ab.js",
+    "static/js/787.2cb4a91e.chunk.js": "/static/js/787.2cb4a91e.chunk.js",
+    "index.html": "/index.html",
+    "main.45d2b814.css.map": "/static/css/main.45d2b814.css.map",
+    "main.ab11b7ab.js.map": "/static/js/main.ab11b7ab.js.map",
+    "787.2cb4a91e.chunk.js.map": "/static/js/787.2cb4a91e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21ed6118.css",
-    "static/js/main.b5e4fc4d.js"
+    "static/css/main.45d2b814.css",
+    "static/js/main.ab11b7ab.js"
   ]
 }

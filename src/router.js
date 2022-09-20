@@ -10,7 +10,7 @@ import UserList from "./views/UserList/UserList";
 export default class IRouter extends Component {
   render() {
     return (
-      <Routes>
+      <Routes basename="/React_AntDesign">
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/banner" element={<Banner />} />   
